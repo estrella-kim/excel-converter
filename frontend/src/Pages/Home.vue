@@ -1,5 +1,8 @@
 <template>
-  <div>{{ title }}</div>
+  <div>
+    this is home
+    {{ title }}
+  </div>
 </template>
 
 <script>

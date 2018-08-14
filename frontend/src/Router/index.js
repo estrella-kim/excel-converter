@@ -1,5 +1,6 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 import { Home,registerEvent } from "../Pages/index"
-
 
 const routes = [
   {
@@ -12,5 +13,10 @@ const routes = [
   }
 ]
 
+Vue.use(VueRouter)
 
-export { routes }
+const router = new VueRouter({
+  routes : routes
+});
+
+export default router;
