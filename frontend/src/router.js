@@ -1,13 +1,9 @@
-import { Home, Calendar } from './Components/index'
+import { Home } from './Pages/index'
 
 const routes = [
   {
     path: '/',
     component: Home
-  },
-  {
-    path: '/calendar',
-    component: Calendar
   }
 ]
 
