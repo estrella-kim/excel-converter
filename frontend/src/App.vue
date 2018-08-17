@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <date-range-picker :startDate="startDate" :endDate="endDate" @update="console.log(value)"></date-range-picker>
-    <router-view></router-view>
+    <router-view name="navigation"></router-view>
+    <router-view name="contents"></router-view>
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
-  import VueRouter from 'vue-router'
-  import DateRangePicker from 'vue2-daterange-picker/src/components/DateRangePicker'
+  import 'bootstrap/dist/css/bootstrap.css'
+  import 'bootstrap-vue/dist/bootstrap-vue.css'
+  import BootstrapVue from 'bootstrap-vue'
 
-  Vue.use(VueRouter)
+  Vue.use(BootstrapVue)
 
   export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      startDate: '2017-09-05',
-      endDate: '2017-09-15'
+    name: 'app',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
     }
-  },
-  components: {
-    DateRangePicker
-  },
-  methods: {
   }
-}
 </script>
 
 <style lang="scss">
